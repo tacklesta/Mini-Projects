@@ -1,0 +1,100 @@
+html{
+  height:100vh;
+  background: rgb(7, 7, 7);
+  background: linear-gradient(
+  90deg,
+  rgb(35, 224, 18) 0%,
+  rgb(17, 216, 206) 100%
+  );
+}
+
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Roboto','Oxygen',
+  'Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  /* Overflow is used to hide the oveflow of content out of it's box */
+  overflow: hidden;
+}
+
+.App{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.calculator-container{
+  height: 500px;
+  width: 350px;
+  background-color: #000000;
+  border-radius: 15px;
+  margin: 8rem auto;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 30px 20px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.output-container{
+  width: 100%;
+  height: 35%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size:3em;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.output-container span{
+  align-self: flex-end;
+  text-align: right;
+}
+
+.inputs-container{
+  height: 65%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #9c9c9c;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.inputs-container button {
+  border-radius: 5px;
+  border: 1px solid rgba(73, 73, 73, 50px);
+}
+
+.inputs-container button:hover {
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: rgb(122, 118, 118);
+}
+
+.btn-orange {
+  background-color: #49e60b;
+}
+
+.btn-redorange {
+  background-color: #1dbad6;
+}
+
+.inputs-container > .btn-bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.inputs-container > .btn-bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
